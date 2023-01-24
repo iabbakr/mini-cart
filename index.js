@@ -17,6 +17,7 @@ decrement.addEventListener('click', function(){
 increment.addEventListener('click', function(){
     quantity ++;
     decrement.disabled = false;
+    cartBtn.disabled = false;
     quantityDisplay.innerText = quantity;
 });
  
