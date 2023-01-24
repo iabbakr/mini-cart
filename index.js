@@ -12,6 +12,7 @@ decrement.addEventListener('click', function(){
 
 increment.addEventListener('click', function(){
     quantity ++
+    decrement.disabled = false;
     quantityDisplay.innerText = quantity
 })
  
