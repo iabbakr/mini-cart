@@ -7,7 +7,7 @@ let quantity = 0;
 
 decrement.addEventListener('click', function(){
     quantity--;
-    if (decrement === 0){
+    if (quantity === 0){
         decrement.disabled = true;
 
     };
