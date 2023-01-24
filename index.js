@@ -9,8 +9,10 @@ decrement.addEventListener('click', function(){
     quantity--;
     if (quantity === 0){
         decrement.disabled = true;
+        cartBtn.disabled = true;
 
     };
+        
     quantityDisplay.innerText = quantity;
 });
 
@@ -23,8 +25,5 @@ increment.addEventListener('click', function(){
  
 cartBtn.addEventListener('click', function(){
     console.log(`Your order for ${quantity} pairs of shoes is being processed`);
-    if (quantity === 0){
-        decrement.disabled = true;
-
-    };
+    
 });
