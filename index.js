@@ -22,4 +22,8 @@ increment.addEventListener('click', function(){
  
 cartBtn.addEventListener('click', function(){
     console.log(`Your order for ${quantity} pairs of shoes is being processed`);
+    if (quantity === 0){
+        decrement.disabled = true;
+
+    };
 });
